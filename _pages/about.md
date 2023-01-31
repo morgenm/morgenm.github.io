@@ -18,4 +18,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi. I post malware analysis and reverse engineering stuff here.
+Hi. I post malware analysis and reverse engineering stuff here. Navigate to my blog to see my writeups.
