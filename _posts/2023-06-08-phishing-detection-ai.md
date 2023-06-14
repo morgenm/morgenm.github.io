@@ -7,6 +7,8 @@ tags: phishing nlp ai
 categories:
 ---
 
+**_Update: I uploaded the code to GitHub. You can find it [here](https://github.com/morgenm/nlp-ai-phishing)_**
+
 For this post, I am discussing a project I undertook to solve a ubiquitous issue in cybersecurity: phishing. Realistically, my efforts can not equal what large corporations have already achieved. I do not have their resources or expertise. Thus, my true aim is to develop a solution using publicly accessible data (in addition to emails from my personal inbox) and code which can run on my laptop. 
 
 In concrete terms, my aim is binary classification of phishing emails, where the "true" class contains phishing emails, and the "false" class contains benign, non-phishing emails. The only information considered for classification is the body text of the emails. This makes the project simpler from the outset, since I used multiple datasets which had differing formats. Additionally, it makes the classification models developed more general as they can be applied to any text, whether it be a phishing email, website, or social media post. Applying the models to other mediums is outside of the scope of this post; however, I may write about this topic in the future. 
