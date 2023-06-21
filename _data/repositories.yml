@@ -5,3 +5,6 @@ github_repos:
   - morgenm/basicgopot
   - morgenm/unpadit
   - morgenm/nlp-ai-phishing
+
+github_repos_contributed:
+  - securego/gosec
