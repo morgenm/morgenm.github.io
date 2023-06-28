@@ -10,10 +10,11 @@ social: true  # includes social icons at the bottom of the page
 
 Information Security Analyst working in Incident Response.
 
-I contribute to open source projects and maintain a cybersecurity blog. 
+I contribute to open source projects and maintain a blog. 
 I am interested in:
+- Software Development and Engineering
 - Application Security
 - Reverse Engineering and Malware Analysis
 - ML/AI
 
-Navigate to my [Blog](/blog) to see my writeups on cybersecurity related topics, like reverse engineering and the applications of ML/AI in security. Check out my [Repos](/repositories) too.
+Navigate to my [Blog](/blog) to see writeups on the projects I am working on. I discuss software I am developing and other topics such as reverse engineering and the applications of ML/AI in security. Check out my [Repos](/repositories) too.
