@@ -13,21 +13,22 @@ nav_order: 3
 ### basicgopot
 <div>{% include repository/repo.html repository="morgenm/basicgopot" %}</div>
 
-**Goal**: The goal of this project is to create an HTTP honeypot server specifically focused on file uploads and which provides the user the ability to customize nearly all aspects of the server. 
+**Goal**: The goal of this project is to create an HTTP honeypot server for the purpose of collecting malicious file uploads. The server should provide the user the ability to customize nearly all aspects of the server. 
 
 **Implemented Features**:
+- Any files uploaded by malicious hackers are logged and stored for analysis.
 - Allows the user to serve custom HTML and CSS so they can design the webserver however they wish. 
 - Can customize what the server does when a file is uploaded to the server: 
   - It can scan the file upload with VirusTotal.
   - The user can define custom webhooks which call any API they wish. 
-- Traffic and upload logging.
+- Traffic logging.
 - The server can be run with Docker and Docker Compose.
 
-**Technical Approach**: I wrote the project in Go and used only the standard library. To serve the HTML and CSS files and to handle the file upload forms, I used the standard library's `net/http` package. Development was performed iteratively; I started by creating a minimal webserver then expanded to implement all the planned features. The `testing` package was used to design unit and integration tests and to fuzz several function inputs. `Delve` was used for debugging the Go code. 
+**Technical Approach**: I wrote the project in Go using only the standard library. I used the standard library's `net/http` package to serve the HTML and CSS files and to handle the file upload forms. Development was performed iteratively; I started by creating a minimal webserver which served only static HTML/CSS files, then iteratively implemented all the planned features. The `testing` package was used to design unit and integration tests and to fuzz function inputs. [Delve](https://github.com/go-delve/delve) was used for debugging the Go code. 
 
-GitHub issues were used to track planned features and other enhancements. Most features were implemented in their own branch and were merged back to `main` with pull-requests to better organize and track my progress. I used GitHub actions to implement a CI/CD pipeline. Actions that I designed for this project include: linting, compiling, testing, exporting coverage to [codecov.io](https://codecov.io/gh/morgenm/basicgopot), and checking for security vulnerabilities with [gosec](https://github.com/securego/gosec). [Snyk](https://snyk.io) was also used to check the source code and docker images for vulnerabilities.
+GitHub issues were used to track planned features and other enhancements. In order to organize and track my progress, features were implemented in their own branches which were merged back into `main`. I used GitHub Actions to implement a CI/CD pipeline. Actions that I designed for this project include: linting, compiling, testing, exporting coverage to [codecov.io](https://codecov.io/gh/morgenm/basicgopot), and checking for security vulnerabilities with [gosec](https://github.com/securego/gosec). [Snyk](https://snyk.io) was also used to check the source code and docker images for vulnerabilities.
 
-Dynamic security testing was performed using [OWASP ZAP](https://www.zaproxy.org/). ZAP was used to fuzz the upload functionality on the webserver and to test for other security vulnerabilities that static code scanning could not find. This uncovered some issues that I patched related to file uploads that were repeated in quick succession.
+Dynamic security testing was performed using [OWASP ZAP](https://www.zaproxy.org/). ZAP was used to fuzz the file upload functionality and to test for other security vulnerabilities that static code scanning could not find. This uncovered some issues that I patched related to file uploads that were repeated in quick succession.
 
 Finally, [goreleaser](https://goreleaser.com/) was used to release binaries for various architectures and operating systems directly to GitHub. Additionally, docker images were published on [DockerHub](https://hub.docker.com/r/morgenm/basicgopot/).
 
