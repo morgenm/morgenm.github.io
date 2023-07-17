@@ -27,6 +27,8 @@ nav_order: 3
 
 GitHub issues were used to track planned features and other enhancements. Most features were implemented in their own branch and were merged back to `main` with pull-requests to better organize and track my progress. I used GitHub actions to implement a CI/CD pipeline. Actions that I designed for this project include: linting, compiling, testing, exporting coverage to [codecov.io](https://codecov.io/gh/morgenm/basicgopot), and checking for security vulnerabilities with [gosec](https://github.com/securego/gosec). [Snyk](https://snyk.io) was also used to check the source code and docker images for vulnerabilities.
 
+Dynamic security testing was performed using [OWASP ZAP](https://www.zaproxy.org/). ZAP was used to fuzz the upload functionality on the webserver and to test for other security vulnerabilities that static code scanning could not find. This uncovered some issues that I patched related to file uploads that were repeated in quick succession.
+
 Finally, [goreleaser](https://goreleaser.com/) was used to release binaries for various architectures and operating systems directly to GitHub. Additionally, docker images were published on [DockerHub](https://hub.docker.com/r/morgenm/basicgopot/).
 
 While the primary planned features are implemented, I plan on continuing to improve this project with additional features.
