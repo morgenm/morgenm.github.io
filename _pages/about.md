@@ -16,4 +16,4 @@ I am interested in:
 - AppSec
 - Reverse Engineering
 
-Navigate to my [Blog](/blog) to see writeups on the projects I am working on. I discuss software I am developing and other topics such as reverse engineering and the applications of ML/AI in security. Check out my [Repos](/repositories) too.
+Navigate to my [Blog](/blog) to see writeups on the projects I am working on. I discuss software I am developing and other topics such as reverse engineering and the applications of ML/AI in security. Check out my [Portfolio](/portfolio) too.

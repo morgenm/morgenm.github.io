@@ -1,21 +1,39 @@
 ---
 layout: page
-permalink: /repositories/
-title: repositories
-description: A curated list of my GitHub repos. Some cybersecurity and hacking related projects. 
+permalink: /portfolio/
+title: portfolio
+description:
 nav: true
 nav_order: 3
 ---
 
-## My GitHub [![GitHub](https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/morgenm)
+## Personal Projects
+---
 
+### basicgopot
+<div>{% include repository/repo.html repository="morgenm/basicgopot" %}</div>
 
+**Goal**: The goal of this project is to create an HTTP honeypot server specifically focused on file uploads and which provides the user the ability to customize nearly all aspects of the server. 
 
-![Metrics](https://metrics.lecoq.io/morgenm?template=classic&repositories.skipped=scripts.irssi.org&lines=1&notable=1&languages=1&achievements=1&base=header%2C%20activity%2C%20community%2C%20repositories%2C%20metadata&base.indepth=false&base.hireable=false&base.skip=false&languages=false&languages.ignored=html%2C%20css%2C%20scss&languages.skipped=joe-bb%2Cal-folio%2Cxrumpp%2Cmorgenm.github.io&languages.limit=8&languages.threshold=0%25&languages.other=false&languages.colors=github&languages.sections=most-used&languages.indepth=false&languages.analysis.timeout=15&languages.analysis.timeout.repositories=7.5&languages.categories=markup%2C%20programming&languages.recent.categories=markup%2C%20programming&languages.recent.load=300&languages.recent.days=14&lines=false&lines.skipped=joe-bb%2Cal-folio%2Cxrumpp%2Cmorgenm.github.io&lines.sections=base&lines.repositories.limit=4&lines.history.limit=1&achievements=false&achievements.threshold=B&achievements.secrets=true&achievements.display=detailed&achievements.limit=0&notable=false&notable.from=organization&notable.repositories=false&notable.indepth=false&notable.types=commit&notable.self=false&config.timezone=America%2FChicago)
+**Implemented Features**:
+- Allows the user to serve custom HTML and CSS so they can design the webserver however they wish. 
+- Can customize what the server does when a file is uploaded to the server: 
+  - It can scan the file upload with VirusTotal.
+  - The user can define custom webhooks which call any API they wish. 
+- Traffic and upload logging.
+- The server can be run with Docker and Docker Compose.
+
+**Technical Approach**: I wrote the project in Go and used only the standard library. To serve the HTML and CSS files and to handle the file upload forms, I used the standard library's `net/http` package. Development was performed iteratively; I started by creating a minimal webserver then expanded to implement all the planned features. The `testing` package was used to design unit and integration tests and to fuzz several function inputs. `Delve` was used for debugging the Go code. 
+
+GitHub issues were used to track planned features and other enhancements. Most features were implemented in their own branch and were merged back to `main` with pull-requests to better organize and track my progress. I used GitHub actions to implement a CI/CD pipeline. Actions that I designed for this project include: linting, compiling, testing, exporting coverage to [codecov.io](https://codecov.io/gh/morgenm/basicgopot), and checking for security vulnerabilities with [gosec](https://github.com/securego/gosec).
+
+Finally, [goreleaser](https://goreleaser.com/) was used to release binaries for various architectures and operating systems directly to GitHub. Additionally, docker images were published on [DockerHub](https://hub.docker.com/r/morgenm/basicgopot/).
+
+While the primary planned features are implemented, I plan on continuing to improve this project with additional features.
 
 ---
 
-## GitHub Repositories
+## Other Personal Projects [![GitHub](https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/morgenm)
 
 {% if site.data.repositories.github_repos %}
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
@@ -35,3 +53,4 @@ nav_order: 3
   {% endfor %}
 </div>
 {% endif %}
+
