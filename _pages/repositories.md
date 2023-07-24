@@ -36,6 +36,21 @@ While the primary planned features are implemented, I plan on continuing to impr
 
 ---
 
+### Phishing Detection using NLP and AI
+<div>{% include repository/repo.html repository="morgenm/basicgopot" %}</div>
+
+Go [here](/blog/2023/phishing-detection-ai/) to read the full writeup.
+
+**Goal**: The goal of this project is to develop a binary classifier that accurately predicts whether a given email body is a phish.
+
+**Technical Approach**: I developed Python code for parsing the body text of email messages and for applying Natural Language Processing techniques such as topic modeling and sentiment analysis on the data. The data consisted of publicly available benign and phishing email corpora. I used Random Forest Classifiers and Convolutional Neural Networks to perform prediction.
+
+**Results**: I achieved 98.6% accuracy on the validation data taken from the publically available corpora. For fun, I applied it to my own email inbox, which achieved 91.4% accuracy.
+
+*See the above link for more details on this project.*
+
+---
+
 ## Other Personal Projects [![GitHub](https://img.shields.io/badge/GitHub-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/morgenm)
 
 {% if site.data.repositories.github_repos %}

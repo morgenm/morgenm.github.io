@@ -4,7 +4,6 @@ github_users:
 github_repos:
   - morgenm/unpadit
   - morgenm/goboundcheck
-  - morgenm/nlp-ai-phishing
 
 github_repos_contributed:
   - securego/gosec

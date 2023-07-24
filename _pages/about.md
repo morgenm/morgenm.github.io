@@ -12,8 +12,10 @@ Information Security Analyst working in Incident Response.
 
 I contribute to open source projects and maintain a blog. 
 I am interested in:
+- Computer Science and Security Research
+- ML/AI
 - Software Development and Engineering
 - AppSec
 - Reverse Engineering
 
-Navigate to my [Blog](/blog) to see writeups on the projects I am working on. I discuss software I am developing and other topics such as reverse engineering and the applications of ML/AI in security. Check out my [Portfolio](/portfolio) too.
+Navigate to my [Blog](/blog) to see writeups on the projects I am working on. I discuss software I am developing and other topics such as reverse engineering and the applications of ML/AI in security. Check out my [Portfolio](/portfolio) for writeups on some of my projects.

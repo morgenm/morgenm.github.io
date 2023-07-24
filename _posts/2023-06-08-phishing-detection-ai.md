@@ -7,7 +7,7 @@ tags: phishing nlp ai
 categories:
 ---
 
-**_Update: I uploaded the code to GitHub. You can find it [here](https://github.com/morgenm/nlp-ai-phishing)_**
+**_Update: I uploaded the code to GitHub. You can find it [here](https://github.com/morgenm/nlp-ai-phishing)._**
 
 For this post, I am discussing a project I undertook to solve a ubiquitous issue in cybersecurity: phishing. Realistically, my efforts can not equal what large corporations have already achieved. I do not have their resources or expertise. Thus, my true aim is to develop a solution using publicly accessible data (in addition to emails from my personal inbox) and code which can run on my laptop. 
 
