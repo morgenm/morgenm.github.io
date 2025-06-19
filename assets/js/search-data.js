@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/portfolio/";
           },
-        },{id: "post-using-basicgopot-with-hybrid-analysis",
+        },{id: "post-crackmes-one-catpuzzler-39-s-switching-crackme",
+        
+          title: "Crackmes.one - catpuzzler&#39;s Switching crackme",
+        
+        description: "Writeup for catpuzzler&#39;s &quot;Switching crackme&quot; (crackmes.one)",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/crackmes.one-switching-crackme/";
+          
+        },
+      },{id: "post-using-basicgopot-with-hybrid-analysis",
         
           title: "Using basicgopot with Hybrid-Analysis",
         
