@@ -6,7 +6,7 @@ repo_description_lines_max: 2
 github_repos:
   - morgenm/unpadit
   - morgenm/goboundcheck
-  - morgenm/nlp-ai-phishing
+  - morgenm/mlwl
 
 github_repos_contributed:
   - securego/gosec
