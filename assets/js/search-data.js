@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/portfolio/";
           },
-        },{id: "post-crackmes-one-catpuzzler-39-s-switching-crackme",
+        },{id: "post-dirty-pipe-exploit-in-rust",
+        
+          title: "Dirty Pipe Exploit in Rust",
+        
+        description: "Writeup covering my Dirty Pipe (CVE-2022-0847) exploit in Rust",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/dirtypipe/";
+          
+        },
+      },{id: "post-crackmes-one-catpuzzler-39-s-switching-crackme",
         
           title: "Crackmes.one - catpuzzler&#39;s Switching crackme",
         
