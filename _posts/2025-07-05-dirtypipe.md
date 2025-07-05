@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dirty Pipe Exploit in Rust
-date: 2025-07-04 11:00:00
+date: 2025-07-05 12:00:00
 description: Writeup covering my Dirty Pipe (CVE-2022-0847) exploit in Rust
 tags: exploit research
 categories:
